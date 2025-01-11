@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+</head>
+<body>
+    <h2>Online Quiz Submission</h2>
+    <form action="/submit-quiz" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h3>Question 1: What is the capital of France?</h3>
+        <input type="radio" id="paris" name="question1" value="Paris" required>
+        <label for="paris">Nice</label><br>
+        <input type="radio" id="london" name="question1" value="London">
+        <label for="london">Monaco</label><br>
+        <input type="radio" id="berlin" name="question1" value="Berlin">
+        <label for="berlin">Paris</label><br><br>
+
+        <h3>Question 2: Which of these is not a programming language?</h3>
+        <input type="radio" id="python" name="question2" value="Python" required>
+        <label for="python">Python</label><br>
+        <input type="radio" id="html" name="question2" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="question2" value="CSS">
+        <label for="css">Java</label><br><br>
+
+        <h3>Question 3: Select your favorite App (you can select multiple):</h3>
+        <input type="checkbox" id="Instagram" name="question3" value="Instagram">
+        <label for="Instagram">Instagram</label><br>
+        <input type="checkbox" id="x" name="question3" value="x">
+        <label for="x">X</label><br>
+        <input type="checkbox" id="Stake" name="question3" value="Stake">
+        <label for="Stake">Stake</label><br><br>
+
+        <label for="timer">Time Remaining:</label><br>
+        <input type="text" id="timer" name="timer" placeholder="Time remaining: 10:00" disabled><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
